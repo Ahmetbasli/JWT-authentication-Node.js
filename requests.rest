@@ -1,0 +1,10 @@
+GET http://localhost:3003/posts
+Authorization: fksjfs eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYyNzcyMzQyNn0.rtno2Q6SCxXlNRwuXCJ8x0iUEAAwfwC6IQyjNfx_Onc
+###
+
+POST http://localhost:3003/login
+Content-Type: application/json
+
+{
+    "username" : "Kyle"
+}
