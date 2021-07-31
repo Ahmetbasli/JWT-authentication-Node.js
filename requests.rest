@@ -1,8 +1,17 @@
-GET http://localhost:3003/posts
-Authorization: fksjfs eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYyNzcyMzQyNn0.rtno2Q6SCxXlNRwuXCJ8x0iUEAAwfwC6IQyjNfx_Onc
+GET http://localhost:3001/posts
+Authorization: bearers eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYyNzczMzQyOCwiZXhwIjoxNjI3NzMzNDg4fQ.LQ6gN-esu98FlQQHKTijzKwSIH7DZuGuTtkXqz6NRng
 ###
 
-POST http://localhost:3003/login
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYyNzczMzM3MX0.aDNFlxGERkUCD0OPfhz_bsOmq5RGCB-9SqCFz8tUwvA"
+}
+
+
+###
+POST http://localhost:4000/login
 Content-Type: application/json
 
 {
